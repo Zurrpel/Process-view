@@ -1,0 +1,41 @@
+## Build artifacts
+bin/
+obj/
+
+## .NET intermediate and cache files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+## NuGet
+*.nupkg
+packages/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## VS / Rider / IDE
+.vs/
+.idea/
+*.sln.iml
+
+## OS-specific
+[Tt]humbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## SQLite / local databases
+*.db
+*.sqlite
+
+## ProcessView specific
+ProcessView/bin/
+ProcessView/obj/
+ProcessView/process-snapshots.db
+
