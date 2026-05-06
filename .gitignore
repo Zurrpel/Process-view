@@ -39,3 +39,8 @@ ProcessView/bin/
 ProcessView/obj/
 ProcessView/process-snapshots.db
 
+## Repo artifacts (build outputs, runtime results, generated files)
+artifacts/
+artifacts/**
+.tmp-test.db
+

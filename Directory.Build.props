@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <!-- Keep repository root clean: redirect build outputs into /artifacts -->
+    <ArtifactsDir>$(MSBuildThisFileDirectory)artifacts\</ArtifactsDir>
+    <BaseIntermediateOutputPath>$(ArtifactsDir)obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(ArtifactsDir)bin\</BaseOutputPath>
+  </PropertyGroup>
+</Project>
+
