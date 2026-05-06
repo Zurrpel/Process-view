@@ -43,7 +43,13 @@ internal static class Toolhelp32
                 {
                     ProcessId = unchecked((int)entry.th32ProcessID),
                     ParentProcessId = unchecked((int)entry.th32ParentProcessID),
-                    Name = name
+                    Name = name,
+                    ThreadCount = unchecked((int)entry.cntThreads),
+                    UsageCount = unchecked((int)entry.cntUsage),
+                    ModuleId = unchecked((int)entry.th32ModuleID),
+                    DefaultHeapId = entry.th32DefaultHeapID.ToInt64(),
+                    PriorityClassBase = entry.pcPriClassBase,
+                    Flags = unchecked((int)entry.dwFlags),
                 });
 
                 entry.dwSize = (uint)Marshal.SizeOf<PROCESSENTRY32>();
